@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://www.pearson.com/etc/designs/pearson-corporate/favicon.ico">
+
+    <title>Pearson AR Class Room</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="test_files/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="test_files/justified-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/photoswipe.css" type="text/css" rel="stylesheet" />  
+  <script type="text/javascript" src="js/klass.min.js"></script>
+  <script type="text/javascript" src="js/code.photoswipe-3.0.5.min.js"></script>
+  
+  
+  <script type="text/javascript">
+
+    (function(window, PhotoSwipe){
+    
+      document.addEventListener('DOMContentLoaded', function(){
+      
+        var
+          options = {},
+          instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), options );
+      
+      }, false);
+      
+      
+    }(window, window.Code.PhotoSwipe));
+    
+
+    $(document).ready(function() {
+    $('[data-toggle=tooltip]').tooltip();
+    }); 
+  </script>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="masthead">
+        <img class="img-responsive" src="img/top-green.jpg" style="width:100%;" alt="...">
+        <ul class="nav nav-justified">
+          <li class="active"><a href="#">My Class</a></li>
+          <li><a href="#">My Modules</a></li>
+          <li><a href="#">My Favorites</a></li>
+          <li><a href="#">My Lecturers</a></li>
+          <li><a href="#">Notebook</a></li>
+          <li><a href="#">Calendar</a></li>
+        </ul>
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1 id="head">My Class Room</h1>
+        <p class="lead"  style="font-weight: bold;">Join Pearson My Class Room and help build the future of higher education. Get invovled beyond the classroom today..</p>
+        <p><a class="btn btn-lg btn-success myClassBtn" href="#" role="button">Enter My Class room</a></p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+
+
+        <div class="col-lg-4  col-xs-8">
+          <div class="course" align="center" data-toggle="tooltip" data-placement="bottom" title="I want to learn Chemistry">
+            <h2 style="text-align:center">Chemistry</h2>
+            <img class="img-responsive  courseimg" src="img/chem2.jpg" style="width:80%; border-radius: 20px;padding:10px;" alt="...">
+            <p class="text-courses">High School Chemistry Podcasts, notes from my class for my students. ... AP Chemistry lecture over bonding, lewis structures and resonance structures.</p>
+            <p><a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#chemistryModal">Study Chemistry »</a></p>
+          </div>
+        </div>
+       
+        <div class="col-lg-4  col-xs-8">
+          <div class="course"  align="center"  data-toggle="tooltip" data-placement="bottom" title="I want to learn Biology">
+            <h2 style="text-align:center">Biology</h2>
+            <img class="img-responsive  courseimg" src="img/heart.jpg" style="width:80%; border-radius:20px;padding:10px;" alt="...">
+            <p class="text-courses">This Biology 101: Intro to Biology course prepares you to take the Biology CLEP exam and earn real college credit. Watch biology video lessons .</p>
+            <p><a class="btn btn-primary" href="#" role="button"  data-toggle="modal" data-target="#chemistryModal">Study Biology »</a></p>
+          </div>
+        </div>
+
+         <div class="col-lg-4  col-xs-8">
+          <div  class="course" align="center" data-toggle="tooltip" data-placement="bottom" title="I want to learn Physics">
+            <h2 style="text-align:center">Physics</h2>
+            <img class="img-responsive courseimg" src="img/physics.jpg" style="width:80%; border-radius: 20px;padding:10px;" alt="...">
+            <p class="text-courses">Learn the fundamentals of physics online for free. This course will teach you basic physics concepts on an innovative platform. Happy Learning!</p>
+            <p><a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#chemistryModal">Study Physics »</a></p>
+          </div>
+        </div>
+
+
+
+       
+      </div>
+
+      <!-- Site footer -->
+      <div class="footer">
+        <!-- <p>© Pearson My Class -- Pan Pearson Hackathon  2014</p> -->
+        <img class="img-responsive" src="img/bottom-green.jpg" style="width:100%;" alt="...">
+      </div>
+
+    </div> <!-- /container -->
+    <!-- Modal -->
+    <div class="modal fade" id="chemistryModal" tabindex="-1" role="dialog" aria-labelledby="chemistryModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h2 class="modal-title" id="myModalLabel" style="text-align:center;font-weight:bold">My Chemistry Class</h2>
+          </div>
+          <div class="modal-body">
+                <ul id="Gallery" class="gallery">    
+                  <li><a href="img/full/chem/chem2.jpg" data-toggle="tooltip" data-placement="bottom" title="Practicle session with cronical flasks"><img src="img/thumb/chem/chem2.jpg" alt="Practicle session with cronical flasks" /></a></li>
+
+                  <li><a href="img/full/chem/chem3.jpg" data-toggle="tooltip" data-placement="bottom" title="Scientific lab equipments"><img src="img/thumb/chem/chem3.jpg" alt="Practicle session with scientific lab equipments" /></a></li>
+
+                  <li><a href="img/full/chem/chem4.jpg"  data-toggle="tooltip" data-placement="bottom" title="Periodic table"><img src="img/thumb/chem/chem4.jpg" alt="Periodic table" /></a></li>
+
+                   <li><a href="img/full/chem/chem1.jpg"  data-toggle="tooltip" data-placement="bottom" title="Chemists in reality"><img src="img/thumb/chem/chem1.jpg" alt="Chemists in reality" /></a></li>
+                </ul>  
+          </div>
+          <div class="modal-footer">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  
+
+</body></html>

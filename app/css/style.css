@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "weblysleekuil";
+  src: url(/fonts/weblysleekuisl.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "weblysleekuil-bold";
+  src: url(/fonts/weblysleekuisb.ttf) format("truetype");
+}
+
+keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+body{
+  background-color: rgba(249, 254, 255, 1);
+  font-family:'weblysleekuil';
+  
+  }
+.col-lg-4{
+    margin-top: 5px !important;
+
+  }  
+  .col-xs-8{
+  margin-top: 5px !important;
+
+  }
+.modal-backdrop {background-color: #34495e;}
+/*.modal-dialog {width: 900px}*/
+  #head{
+    /*font: 900 50px/50px "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family:'weblysleekuil-bold';
+    text-align: center;
+    padding: 2px;
+    color: #2c3e50;
+    font-family: 
+}
+.courseimg{
+  animation: fadein 1.0s;
+  -webkit-transition: all 1.0s ease-in;
+  -moz-transition: all 1.0s ease-in;
+  -o-transition: all 1.0s ease-in;
+  -ms-transition: all 1.0s ease-in;
+  transition: all 1.0s ease-in;
+  transition: all 1.0s linear;
+
+}
+.gallery { list-style: none; padding: 0; margin: 0; }
+.gallery:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+.gallery li { float: left; width: 25%; padding-top: 25px;}
+.gallery li a { display: block; margin: 5px; border: 1px solid #3c3c3c; }
+.gallery li img { display: block; width: 100%; height: auto; }
+.courseimg:hover{
+        
+   -webkit-transform: scale(1.1,1.1);
+         -moz-transform: scale(1.1,1.1);
+         -o-transform: scale(1.1,1.1);
+         -ms-transform: scale(1.1,1.1);
+         transform: scale(1.1,1.1);
+
+}
+.gallery> li > a:hover{
+
+}
+.course{
+  border: 2px solid #1ABC9C;
+  border-radius: 22px;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: none;
+  color: #ffffff !important;
+}
+.btn:active,
+.btn.active {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#btnList{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 4%;
+}
+#imgHolder{
+    margin-top: 10%;
+}
+.btn-lg {
+  padding: 10px 19px;
+  font-size: 17px;
+  line-height: 1.471;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: #ffffff !important; 
+  background-color: #1abc9c !important;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff  !important;
+  background-color: #48c9b0 !important;
+  border-color: #48c9b0 !important;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background: #16a085 !important;
+  border-color: #16a085 !important;
+}
