@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="http://www.pearson.com/etc/designs/pearson-corporate/favicon.ico">
 
-    <title>Pearson AR Class Room</title>
+    <title>Pearson Enrich</title>
 
     <!-- Bootstrap core CSS -->
     <link href="test_files/bootstrap.css" rel="stylesheet">
@@ -28,8 +28,11 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="css/photoswipe.css" type="text/css" rel="stylesheet" />  
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+ 
   <script type="text/javascript" src="js/klass.min.js"></script>
   <script type="text/javascript" src="js/code.photoswipe-3.0.5.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
   
   
   <script type="text/javascript">
@@ -50,7 +53,26 @@
 
     $(document).ready(function() {
     $('[data-toggle=tooltip]').tooltip();
+    $('#datetimepicker1').datetimepicker();
+    
     }); 
+
+      /*$(document).ready(function() {
+
+       $( "#test" ).click(function() {
+          
+            $(".ps-caption-content").html("Amila");
+            alert($(".ps-caption-content").html());
+
+
+          });
+    
+
+    
+    $( ".ps-caption-content" ).append( "<p>Test</p>" );
+
+    }); */
+
   </script>
   </head>
 
@@ -61,27 +83,27 @@
       <div class="masthead">
         <img class="img-responsive" src="img/top-green.jpg" style="width:100%;" alt="...">
         <ul class="nav nav-justified">
-          <li class="active"><a href="#">My Class</a></li>
-          <li><a href="#">My Modules</a></li>
+          <li class="active"><a href="#">Pearson Enrich</a></li>
+          <li><a href="#">My Students Progress</a></li>
           <li><a href="#">My Favorites</a></li>
-          <li><a href="#">My Lecturers</a></li>
           <li><a href="#">Notebook</a></li>
-          <li><a href="#">Calendar</a></li>
+          <li><a href="#">Upload content</a></li>
         </ul>
       </div>
 
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1 id="head">My Class Room</h1>
-        <p class="lead"  style="font-weight: bold;">Join Pearson My Class Room and help build the future of higher education. Get invovled beyond the classroom today..</p>
-        <p><a class="btn btn-lg btn-success myClassBtn" href="#" role="button">Enter My Class room</a></p>
+        <h1 id="head">ENRICH</h1><!-- <i class="fa fa-cubes"></i> -->
+       <p class="lead"  style="font-weight: bold;">  <span style="color:rgb(92, 184, 92)">Welcome Teacher ! </span>Students are waiting for you.
+       Pearson ENRICH is ready to teach Biology,Arts,Physics,Chemistry and Kindergartern ... What do you want to teach them today ?</p>      
+      <!--   <p><a class="btn btn-lg btn-success myClassBtn" href="#" role="button">You have 5 subjects</a></p> -->
       </div>
-
+      <hr style="background-color: rgb(245, 245, 245); height: 2px;">
       <!-- Example row of columns -->
       <div class="row">
 
 
-        <div class="col-lg-4  col-xs-8">
+       <!--  <div class="col-lg-4  col-xs-8">
           <div class="course" align="center" data-toggle="tooltip" data-placement="bottom" title="I want to learn Chemistry">
             <h2 style="text-align:center">Chemistry</h2>
             <img class="img-responsive  courseimg" src="img/chem2.jpg" style="width:80%; border-radius: 20px;padding:10px;" alt="...">
@@ -106,12 +128,58 @@
             <p class="text-courses">Learn the fundamentals of physics online for free. This course will teach you basic physics concepts on an innovative platform. Happy Learning!</p>
             <p><a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#chemistryModal">Study Physics »</a></p>
           </div>
+        </div> -->
+
+    <div class="col-lg-4  col-xs-8">
+          <div class="course" align="center" data-toggle="tooltip" data-placement="bottom" title="I want to teach for Kindergarten">
+            <h2 style="text-align:center">My Kindergarten Class</h2>
+            <img class="img-responsive  courseimg" src="img/kind.jpg" style="width:80%; border-radius: 20px;padding:10px;" alt="...">
+            <p class="text-courses">I want to Teach the alphabet to kindergartners.Help them to recognize letters' shapes and words begins with that letter.Let's teach for kids</p>
+            <p><a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#kindergartenModal">Enter Kindergarten »</a></p>
+          </div>
         </div>
-
-
-
+       
+        <div class="col-lg-4  col-xs-8">
+          <div class="course"  align="center"  data-toggle="tooltip" data-placement="bottom" title="I want to teach Biology">
+            <h2 style="text-align:center">My Biology Class</h2>
+            <img class="img-responsive  courseimg" src="img/heart.jpg" style="width:80%; border-radius:20px;padding:10px;" alt="...">
+            <p class="text-courses">This Biology 101: Intro to Biology course prepares you to take the Biology CLEP exam and earn real college credit. Watch biology video lessons .</p>
+            <p><a class="btn btn-primary" href="#" role="button"  data-toggle="modal" data-target="#bioModal">Enter Biology Class »</a></p>
+          </div>
+        </div>  
+         <div class="col-lg-4  col-xs-8">
+          <div class="course" align="center" data-toggle="tooltip" data-placement="bottom" title="I want to teach for Arts class">
+            <h2 style="text-align:center">My Arts Class</h2>
+            <img class="img-responsive  courseimg" src="img/mona-lisa.jpg" style="width:80%; border-radius: 20px;padding:10px;" alt="...">
+            <p class="text-courses">Let's draw some arts and teach about some historially valued arts  like mona-lisa.Discover how a proper composition can make good art look great</p>
+            <p><a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#artModal">Enter Art Class »</a></p>
+          </div>
+        </div>    
+      
        
       </div>
+
+       <div class="row">
+         <div class="col-lg-4  col-xs-8">
+          <div class="course" align="center" data-toggle="tooltip" data-placement="bottom" title="I want to teach Chemistry">
+            <h2 style="text-align:center">My Chemistry Class</h2>
+            <img class="img-responsive  courseimg" src="img/chem2.jpg" style="width:80%; border-radius: 20px;padding:10px;" alt="...">
+            <p class="text-courses">High School Chemistry Podcasts, notes from my class for my students. ... AP Chemistry lecture over bonding, lewis structures and resonance structures.</p>
+            <p><a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#chemistryModal">Enter Chemistry Class»</a></p>
+          </div>
+        </div> 
+       
+        <div class="col-lg-4  col-xs-8">
+          <div  class="course" align="center" data-toggle="tooltip" data-placement="bottom" title="I want to teach Physics">
+            <h2 style="text-align:center">My Physics Class</h2>
+            <img class="img-responsive courseimg" src="img/physics.jpg" style="width:80%; border-radius: 20px;padding:10px;" alt="...">
+            <p class="text-courses">Learn the fundamentals of physics online for free. This course will teach you basic physics concepts on an innovative platform. Happy Learning!</p>
+            <p><a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#physicsModal">Enter Physics Class »</a></p>
+          </div>
+        </div>      
+
+
+       </div>
 
       <!-- Site footer -->
       <div class="footer">
@@ -145,10 +213,127 @@
         </div>
       </div>
     </div>
+  <div class="modal fade" id="bioModal" tabindex="-1" role="dialog" aria-labelledby="bioModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h2 class="modal-title" id="myModalLabel" style="text-align:center;font-weight:bold">My Biology Class</h2>
+          </div>
+          <div class="modal-body">
+                <ul id="Gallery" class="gallery">    
+                  <li><a href="img/full/dnastructure.jpg" data-toggle="tooltip" data-placement="bottom" title="DNA structure"><img src="img/full/dnastructure.jpg" alt="DNA structure" /></a></li>
 
+                  <li><a href="img/full/bio1.jpg" data-toggle="tooltip" data-placement="bottom" title="Neuron"><img src="img/full/bio1.jpg" alt="Neuron" /></a></li>
+
+                
+                </ul>  
+          </div>
+          <div class="modal-footer">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="physicsModal" tabindex="-1" role="dialog" aria-labelledby="physicsModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h2 class="modal-title" id="myModalLabel" style="text-align:center;font-weight:bold">My Physics Class</h2>
+          </div>
+          <div class="modal-body">
+                <ul id="Gallery" class="gallery">    
+                  <li><a href="img/full/physics.jpg" data-toggle="tooltip" data-placement="bottom" title="DNA structure"><img src="img/full/physics.jpg" alt="DNA structure" /></a></li>
+
+                
+                
+                </ul>  
+          </div>
+          <div class="modal-footer">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="modal fade" id="kindergartenModal" tabindex="-1" role="dialog" aria-labelledby="kindergartenModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h2 class="modal-title" id="myModalLabel" style="text-align:center;font-weight:bold">My Kindergarten Class</h2>
+          </div>
+          <div class="modal-body">
+                  
+                  <div class="form-group">
+                    
+                    <div align="center"><img src="img/full/abc.jpg" class="img-responsive"  style="border: 1px solid rgb(194, 187, 187);width:80%"></div>
+                    <h3>Make this lesson more interactive</h3>
+                    <label for="exampleInputEmail1" style="margin-top:10px"><i class="fa fa-pencil"></i> &nbsp;&nbsp;Notes</label>
+                    <textarea rows="4" cols="40" class="form-control" id="exampleInputEmail1" placeholder="Enter notes">Teach Alphabet to kids</textarea>
+
+                    <label for="exampleInputEmail1" style="margin-top:10px"><i class="fa fa-list"></i>&nbsp;&nbsp;Announcements</label>
+                    <textarea rows="4" cols="40" class="form-control" id="exampleInputEmail1" placeholder="Enter Announcements">Announcement to be entered in future for kids</textarea>
+
+
+                    <label for="exampleInputEmail1" style="margin-top:10px"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Set Assessment Due date</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Assessment Due date" style="width: 25%;">
+                  </div>
+
+                    
+                
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-default">Save Content</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="artModal" tabindex="-1" role="dialog" aria-labelledby="artModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h2 class="modal-title" id="myModalLabel" style="text-align:center;font-weight:bold">My Arts Class</h2>
+          </div>
+          <div class="modal-body">
+                  
+                  <div class="form-group">
+                    
+                    <div align="center"><img src="img/full/Mona_Lisa.jpg" class="img-responsive"  style="border: 1px solid rgb(194, 187, 187);width:80%"></div>
+                    <h3>Make this lesson more interactive</h3>
+                    <label for="exampleInputEmail1" style="margin-top:10px"><i class="fa fa-pencil"></i> &nbsp;&nbsp;Notes</label>
+                    <textarea rows="4" cols="40" class="form-control" id="exampleInputEmail1" placeholder="Enter notes">The Mona Lisa is a half-length portrait of a woman by the Italian artist Leonardo da Vinci, which has been acclaimed as "the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world.</textarea>
+
+                    <label for="exampleInputEmail1" style="margin-top:10px"><i class="fa fa-list"></i>&nbsp;&nbsp;Announcements</label>
+                    <textarea rows="4" cols="40" class="form-control" id="exampleInputEmail1" placeholder="Enter Announcements">Next test will be on following date</textarea>
+
+
+                    <label for="exampleInputEmail1" style="margin-top:10px"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Set Assessment Due date</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Assessment Due date" style="width: 25%;"  value="2014-07-13">
+                  </div>
+
+                    
+                
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-default">Save Content</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
   
+<script type="text/javascript">
+  
 
+</script>
 </body></html>
